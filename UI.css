@@ -1,0 +1,265 @@
+/* General body styles */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button:hover {
+    background-color: white;
+    color: #ff6f61;
+}
+
+/* Container 1 and ReadyToBuild styles */
+.ReadyToBuild, .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA button styles */
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #ff6f61;
+}
+
+/* Container 2 styles */
+.container2 {
+    background-image: url('./images/screen-mockups.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    max-width: 800px;
+    height: 500px;
+    background-position: center; 
+    margin: 50px auto;
+}
+
+/* Container 3 styles */
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+#icon-communities, #icon-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Section styles */
+.section {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    padding: 20px;
+}
+
+.Grow-Together {
+    background-image: url('./images/bg-section-bottom-desktop-1.svg');
+}
+
+
+.Users {
+    background-image: url('./images/bg-section-bottom-desktop-1.svg');
+}
+
+.container4 {
+    padding: 20px;
+    max-width: 50%;
+    text-align: left;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .container4 {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.column {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.column:last-child {
+    margin-right: 0;
+}
+.column h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.column p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.column .header-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.social-links {
+    margin-top: 10px;
+}
+.social-links h2 {
+    margin-bottom: 10px;
+}
+.social-icons a img {
+    width: 34px; 
+    height: 34px; 
+}
+
+.social-icons a {
+    margin-right: 25px; 
+}
+
+.social-icons {
+    display: flex; 
+    justify-content: flex-start; 
+    margin-top: 10px; 
+}
+.newsletter-form {
+    margin-top: 20px;
+}
+.newsletter-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.newsletter-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.newsletter-form button:hover {
+    background-color: #e65c50;
+}
